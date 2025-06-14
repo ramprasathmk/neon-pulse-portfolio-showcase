@@ -1,4 +1,3 @@
-
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { Card } from '@/components/ui/card';
@@ -83,7 +82,7 @@ export const About = () => {
             animate={inView ? "visible" : "hidden"}
             className="space-y-6"
           >
-            <div className="bg-gradient-to-r from-slate-800/50 to-purple-900/20 backdrop-blur-sm rounded-2xl p-8 border border-purple-500/20">
+            <div className="bg-gradient-to-r from-gray-800 to-gray-900 backdrop-blur-sm rounded-2xl p-8 border border-gray-700">
               <h3 className="text-2xl font-semibold mb-4 text-blue-400">My Story</h3>
               <p className="text-gray-300 leading-relaxed mb-4">
                 I'm a passionate full-stack developer with over 4 years of experience creating 
@@ -115,7 +114,7 @@ export const About = () => {
                 variants={itemVariants}
                 className="relative"
               >
-                <Card className="bg-gradient-to-r from-slate-800/30 to-purple-900/10 backdrop-blur-sm border-purple-500/20 p-6 hover:border-purple-400/40 transition-all duration-300 transform hover:scale-[1.02]">
+                <Card className="bg-gradient-to-r from-gray-800 to-gray-900 backdrop-blur-sm border-gray-700 p-6 hover:border-gray-600 transition-all duration-300 transform hover:scale-[1.02]">
                   <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3">
                     <h4 className="text-lg font-semibold text-white">{exp.title}</h4>
                     <span className="text-sm text-purple-400 font-medium">{exp.period}</span>
@@ -124,7 +123,7 @@ export const About = () => {
                   <p className="text-gray-400 text-sm leading-relaxed">{exp.description}</p>
                 </Card>
                 {index < experiences.length - 1 && (
-                  <div className="absolute left-4 top-full w-0.5 h-4 bg-gradient-to-b from-purple-400 to-transparent" />
+                  <div className="absolute left-4 top-full w-0.5 h-4 bg-gradient-to-b from-gray-600 to-transparent" />
                 )}
               </motion.div>
             ))}

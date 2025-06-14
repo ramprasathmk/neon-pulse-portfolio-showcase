@@ -87,21 +87,21 @@ export const Hero = () => {
           variants={itemVariants}
           className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white via-blue-200 to-purple-300 bg-clip-text text-transparent"
         >
-          Alex Johnson
+          Ramprasath M K
         </motion.h1>
 
         <motion.h2
           variants={itemVariants}
           className="text-2xl md:text-3xl text-gray-300 mb-8 font-light"
         >
-          Full-Stack Developer & UI/UX Designer
+          Full-Stack Developer
         </motion.h2>
 
         <motion.p
           variants={itemVariants}
           className="text-lg text-gray-400 mb-12 max-w-2xl mx-auto leading-relaxed"
         >
-          I create beautiful, responsive web applications with modern technologies. 
+          I create responsive web applications with modern technologies. 
           Passionate about clean code, elegant design, and exceptional user experiences.
         </motion.p>
 

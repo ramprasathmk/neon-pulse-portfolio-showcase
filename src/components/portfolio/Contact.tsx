@@ -1,4 +1,3 @@
-
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { Button } from '@/components/ui/button';
@@ -66,7 +65,7 @@ export const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 px-4 bg-gradient-to-r from-slate-900/50 to-purple-900/20">
+    <section id="contact" className="py-20 px-4 bg-gradient-to-r from-slate-900 to-purple-900">
       <div className="max-w-4xl mx-auto">
         <motion.div
           ref={ref}
@@ -100,7 +99,7 @@ export const Contact = () => {
             initial="hidden"
             animate={inView ? "visible" : "hidden"}
           >
-            <Card className="bg-gradient-to-br from-slate-800/40 to-purple-900/20 backdrop-blur-sm border-purple-500/20 p-8">
+            <Card className="bg-gradient-to-br from-gray-900 to-black backdrop-blur-lg border-gray-700 p-8 shadow-lg shadow-purple-900">
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <Input
@@ -110,7 +109,7 @@ export const Contact = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="bg-slate-800/50 border-purple-500/30 text-white placeholder-gray-400 focus:border-purple-400"
+                    className="bg-gradient-to-br from-gray-900 to-black backdrop-blur-md border-purple-700 overflow-hidden hover:border-purple-500 transition-all duration-300 group"
                   />
                 </div>
                 <div>
@@ -121,7 +120,7 @@ export const Contact = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="bg-slate-800/50 border-purple-500/30 text-white placeholder-gray-400 focus:border-purple-400"
+                    className="bg-gradient-to-br from-gray-900 to-black backdrop-blur-md border-purple-700 overflow-hidden hover:border-purple-500 transition-all duration-300 group"
                   />
                 </div>
                 <div>
@@ -132,7 +131,7 @@ export const Contact = () => {
                     value={formData.message}
                     onChange={handleChange}
                     required
-                    className="w-full px-3 py-2 bg-slate-800/50 border border-purple-500/30 rounded-md text-white placeholder-gray-400 focus:border-purple-400 focus:outline-none focus:ring-1 focus:ring-purple-400 resize-none"
+                    className="w-full px-3 py-2 bg-gradient-to-br from-gray-900 to-black backdrop-blur-md border-purple-700 overflow-hidden hover:border-purple-500 transition-all duration-300 group resize-none"
                   />
                 </div>
                 <Button
@@ -153,7 +152,7 @@ export const Contact = () => {
           >
             <motion.div
               variants={itemVariants}
-              className="bg-gradient-to-br from-slate-800/40 to-purple-900/20 backdrop-blur-sm rounded-2xl p-8 border border-purple-500/20"
+              className="bg-gradient-to-br from-gray-900 to-black backdrop-blur-md rounded-2xl p-8 border border-purple-700"
             >
               <h3 className="text-xl font-semibold text-blue-400 mb-4">Let's Connect</h3>
               <p className="text-gray-400 mb-6">
@@ -178,13 +177,13 @@ export const Contact = () => {
 
             <motion.div
               variants={itemVariants}
-              className="bg-gradient-to-br from-slate-800/40 to-purple-900/20 backdrop-blur-sm rounded-2xl p-8 border border-purple-500/20"
+              className="bg-gradient-to-br from-gray-900 to-black backdrop-blur-md rounded-2xl p-8 border border-purple-700"
             >
               <h3 className="text-xl font-semibold text-blue-400 mb-4">Quick Info</h3>
               <div className="space-y-3 text-gray-400">
-                <p>📧 alex.johnson@email.com</p>
-                <p>📱 +1 (555) 123-4567</p>
-                <p>📍 San Francisco, CA</p>
+                <p>📧 mkramprasath12@gmail.com</p>
+                {/* <p>📱 +91 99xxxxxxxx </p> */}
+                <p>📍 Chennai, India</p>
                 <p>⏰ Available for freelance work</p>
               </div>
             </motion.div>

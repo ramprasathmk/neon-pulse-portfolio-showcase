@@ -1,4 +1,3 @@
-
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { Card } from '@/components/ui/card';
@@ -104,7 +103,7 @@ export const Projects = () => {
               whileHover={{ y: -10 }}
               transition={{ duration: 0.3 }}
             >
-              <Card className="bg-gradient-to-br from-slate-800/40 to-purple-900/20 backdrop-blur-sm border-purple-500/20 overflow-hidden hover:border-purple-400/40 transition-all duration-300 group">
+              <Card className="bg-gradient-to-br from-gray-800 to-gray-900 backdrop-blur-sm border-purple-500/20 overflow-hidden hover:border-purple-400/40 transition-all duration-300 group">
                 <div className="relative overflow-hidden">
                   <img
                     src={project.image}
